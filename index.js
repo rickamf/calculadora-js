@@ -22,7 +22,6 @@ input.addEventListener('keydown', function(ev) {
         input.value += ev.key
         return
     }
-    //função para funcionar a tecla de apagar.
     if (ev.key === "Backspace") {
         input.value = input.value.slice(0, -1)
     }
@@ -47,7 +46,6 @@ document.getElementById('copyToClipboard').addEventListener('click', function(ev
        button.innerText = 'Copied!'
        button.classList.add('success')
        navigator.clipboard.writeText(resultInput.value)
-       //Remover o copiado
     } else {
      button.innerText = 'Copy'
      button.classList.remove('success')
